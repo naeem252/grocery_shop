@@ -1,0 +1,26 @@
+.Input{
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.Input label{
+    text-transform: capitalize;
+    font-weight: normal;
+    display: block;
+    margin-bottom: .5rem;
+}
+.Input input,.Input select{
+    display: block;
+    border-radius:5px;
+    border: 1px solid rgba(68, 68, 68, 0.452);
+    padding:10px 5px;
+    width: 90%;
+    font-size: 1.3rem;
+    outline: none;
+    transition: 0.4s ease-out;
+    color: #444;
+}
+.Input input:focus{
+    width: 100%;
+}

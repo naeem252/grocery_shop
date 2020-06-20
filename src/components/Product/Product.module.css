@@ -1,0 +1,117 @@
+.Product{
+    flex:0 0 15rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px #aaa;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
+    
+}
+.Product.Show{
+    display: flex;
+    animation: show 0.4s ease-out forwards;
+}
+@keyframes show{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+.Product.Hide{
+    animation: hide 0.4s ease-out forwards;
+    display: none;
+}
+@keyframes hide{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0);
+    }
+    100%{
+        display: none;
+    }
+}
+.Product:not(:last-child){
+    margin-right:2rem;
+}
+.Product h4{
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #84D835;
+    transition: 0.4s ease-out;
+}
+.ProdImgBox{
+    width: 100%;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.ProdImgBox img{
+    width: 100%;
+    transition: 0.4s ease-out;
+}
+.Price{
+    transition: 0.4s ease-out;
+    margin: 1rem 0;
+}
+.PriceBig{
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-right: 5px;
+}
+.PriceSub{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #aaa;
+    text-decoration: line-through;
+}
+.ProdName{
+    font-weight: 400;
+    color: #C7551B;
+    text-transform: capitalize;
+}
+.Button{
+    text-align: center;
+    padding:5px 1rem ;
+    transition: 0.4s ease-out;
+    transform: translateY(105%);
+    cursor: pointer;
+    background-color: #6BAB77;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: 1.4rem;
+
+}
+.Button:hover{
+    background-color: #4bc762;
+}
+.Button:disabled{
+    background-color: #aaa;
+}
+.Product:hover h4{
+    margin-top:-2rem; 
+}
+.Product:hover .Button{
+    transform:translateY(0px);
+}
+.Product:hover .Price{
+    margin-top:-.1rem; 
+}
+
+.Product:hover .ProdImgBox{
+    transform: scale(.9);
+    
+}

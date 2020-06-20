@@ -1,0 +1,16 @@
+.Header{
+    position: -webkit-sticky;
+    position: sticky;
+    transition: 0.4s ease-out;
+}
+.Header.Sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.Header.Sticky nav{
+    padding: 0;
+    background-color: rgba(240, 248, 255, 0.888);
+   
+}

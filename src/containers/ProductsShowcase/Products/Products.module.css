@@ -1,0 +1,10 @@
+.Products{
+    flex: 1 0 0;
+    padding: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+}

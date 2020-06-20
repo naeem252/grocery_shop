@@ -1,0 +1,29 @@
+.CartProd{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #aaaaaa;
+}
+.ImgBox{
+    width: 64px;
+    height: 64px;
+    flex: 0 0 64px;
+    margin-right: 1rem;
+}
+.ImgBox img{
+    width: 100%;
+    height: 100%;
+}
+
+.ProdInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+
+}
+.ProdInfo > *{
+    flex:1 0 0;
+    display: flex;
+    justify-content: center;
+}
